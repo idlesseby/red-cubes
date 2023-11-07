@@ -1,0 +1,14 @@
+@import url('https://rsms.me/inter/inter.css');
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  background-color: #101010;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
