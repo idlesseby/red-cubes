@@ -1,8 +1,9 @@
 import { Server } from "socket.io"
 
+const origin = process.env.CLIENT_URL || "http://127.0.0.1:5173"
 const io = new Server({
   cors: {
-    origin: "http://127.0.0.1:5173"
+    origin
   }
 })
 

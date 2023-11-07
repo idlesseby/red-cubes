@@ -2,7 +2,9 @@ import { useEffect } from "react"
 import { io } from "socket.io-client"
 import { useAtom, atom } from "jotai"
 
-export const socket = io("http://localhost:3001")
+export const socket = io(
+  import.meta.env.VITE_SERVER_URL || "http://localhost:3001"
+)
 export const redCubesAtom = atom([])
 
 export const SocketManager = () => {
